@@ -1,0 +1,37 @@
+tagline: cargo-xwin
+about: ''
+
+git_user: rust-cross
+git_repo: cargo-xwin
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: cargo-xwin-v[VER].[ARCH]-[OS].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: unknown-linux-musl
+    ext: tar.gz
+    bin_path: cargo-xwin
+  macos:
+    name: apple-darwin
+    ext: tar.gz
+    bin_path: cargo-xwin
+    filename_format_override: cargo-xwin-v[VER].universal2-[OS].[EXT]
+  win:
+    name: windows
+    ext: zip
+    bin_path: cargo-xwin
+    filename_format_override: cargo-xwin-v[VER].[OS]-x64.[EXT]
+
+arch_map:
+  amd64: x86_64
+  arm64: aarch64
+
+ignore:
+  - os: win
+    arch: arm64

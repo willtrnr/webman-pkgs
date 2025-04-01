@@ -1,7 +1,6 @@
 title: kube
 tagline: Kubernetes Tools
-description: |
-  Kubernetes related tools.
+description: ''
 
 packages:
   - argo

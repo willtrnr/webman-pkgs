@@ -1,0 +1,6 @@
+title: cargo
+tagline: Rust cargo extensions
+description: ''
+
+packages:
+  - cargo-xwin
