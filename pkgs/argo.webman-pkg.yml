@@ -1,0 +1,35 @@
+tagline: Argo CLI
+about: |
+
+git_user: argoproj
+git_repo: argo-workflows
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: argo-[OS]-[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    ext: gz
+  macos:
+    name: darwin
+    ext: gz
+  win:
+    name: windows
+    ext: exe.gz
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
+  ppc64le: ppc64le
+  riscv64: riscv64
+  s390x: s390x
+
+ignore:
+  - os: win
+    arch: arm64
