@@ -1,0 +1,31 @@
+tagline: nerdfix
+about: ''
+
+git_user: loichyan
+git_repo: nerdfix
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: nerdfix-[ARCH]-[OS].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: unknown-linux-musl
+    ext: tar.gz
+    bin_path: nerdfix
+  macos:
+    name: apple-darwin
+    ext: tar.gz
+    bin_path: nerdfix
+  win:
+    name: pc-windows-msvc
+    ext: zip
+    bin_path: nerdfix
+
+arch_map:
+  amd64: x86_64
+  arm64: aarch64
