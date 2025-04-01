@@ -1,0 +1,37 @@
+tagline: Linkerd2 CLI Edge
+about: |
+
+git_user: linkerd
+git_repo: linkerd2
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/edge-[VER]/
+filename_format: linkerd2-cli-edge-[VER]-[OS]-[ARCH].[EXT]
+version_format: edge-[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    is_raw_binary: true
+  macos:
+    name: darwin
+    is_raw_binary: true
+    filename_format_override: linkerd2-cli-edge-[VER]-darwin
+  win:
+    name: windows
+    ext: exe
+    is_raw_binary: true
+    filename_format_override: linkerd2-cli-edge-[VER]-windows
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
+
+ignore:
+  - os: macos
+    arch: arm64
+  - os: win
+    arch: arm64
