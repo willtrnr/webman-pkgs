@@ -5,4 +5,5 @@ description: ''
 packages:
   - argo
   - egctl
+  - kubescape
   - linkerd

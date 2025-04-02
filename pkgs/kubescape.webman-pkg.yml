@@ -1,0 +1,36 @@
+tagline: kubescape
+about: |
+  Kubescape is an open-source Kubernetes security platform for your IDE, CI/CD
+  pipelines, and clusters.
+
+git_user: kubescape
+git_repo: kubescape
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: kubescape-[ARCH][OS]-latest.[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: ubuntu
+    is_raw_binary: true
+  macos:
+    name: macos
+    is_raw_binary: true
+  win:
+    name: windows
+    ext: exe
+    is_raw_binary: true
+
+arch_map:
+  amd64: ''
+  arm64: arm64-
+  riscv64: riscv64-
+
+ignore:
+  - os: win
+    arch: arm64
