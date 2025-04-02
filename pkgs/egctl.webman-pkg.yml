@@ -1,0 +1,33 @@
+tagline: Envoy Gateway CLI
+about: ''
+
+git_user: envoyproxy
+git_repo: gateway
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: egctl_v[VER]_[OS]_[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    ext: tar.gz
+    bin_path: bin/linux/amd64/egctl
+  macos:
+    name: darwin
+    ext: tar.gz
+    bin_path: bin/darwin/amd64/egctl
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
+
+ignore:
+  - os: linux
+    arch: arm64
+  - os: macos
+    arch: arm64

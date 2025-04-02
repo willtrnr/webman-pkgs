@@ -4,4 +4,5 @@ description: ''
 
 packages:
   - argo
+  - egctl
   - linkerd
