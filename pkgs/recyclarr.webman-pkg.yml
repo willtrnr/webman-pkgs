@@ -1,0 +1,38 @@
+tagline: recyclarr
+about: ''
+
+git_user: recyclarr
+git_repo: recyclarr
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: recyclarr-[OS]-[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    ext: tar.xz
+    bin_path: recyclarr
+  macos:
+    name: osx
+    ext: tar.xz
+    bin_path: recyclarr
+  win:
+    name: win
+    ext: zip
+    bin_path: recyclarr
+
+arch_map:
+  amd64: x64
+  arm64: arm64
+  arm: arm
+
+ignore:
+  - os: macos
+    arch: arm
+  - os: win
+    arch: arm
