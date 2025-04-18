@@ -1,0 +1,26 @@
+tagline: longhornctl
+about: |
+  Headless way for preflighting, operating and troubleshooting Longhorn cluster.
+
+git_user: longhorn
+git_repo: cli
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: longhornctl-[OS]-[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    is_raw_binary: true
+  macos:
+    name: darwin
+    is_raw_binary: true
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
