@@ -7,3 +7,4 @@ packages:
   - egctl
   - kubescape
   - linkerd
+  - longhornctl
