@@ -1,0 +1,37 @@
+tagline: rustowlc
+about: |
+  Visualize Ownership and Lifetimes in Rust. (Compiler)
+
+git_user: cordx56
+git_repo: rustowl
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: rustowlc-[ARCH]-[OS]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: unknown-linux-gnu
+    is_raw_binary: true
+  macos:
+    name: apple-darwin
+    is_raw_binary: true
+  win:
+    name: pc-windows-msvc
+    is_raw_binary: true
+
+arch_map:
+  amd64: x86_64
+  arm64: aarch64
+
+ignore:
+  - os: linux
+    arch: arm64
+  - os: macos
+    arch: amd64
+  - os: win
+    arch: arm64
