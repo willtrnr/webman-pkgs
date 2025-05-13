@@ -3,4 +3,5 @@ tagline: Rust cargo extensions
 description: ''
 
 packages:
+  - cargo-machete
   - cargo-xwin
