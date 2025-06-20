@@ -1,0 +1,28 @@
+tagline: repak
+about: |
+  Unreal Engine .pak file library and CLI in rust.
+
+git_user: trumank
+git_repo: repak
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: repak_cli-[ARCH]-[OS].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: unknown-linux-gnu
+    ext: tar.xz
+    bin_path: repak
+    extract_has_root: true
+  win:
+    name: pc-windows-msvc
+    ext: zip
+    bin_path: repak
+
+arch_map:
+  amd64: x86_64
