@@ -1,0 +1,21 @@
+tagline: gvisor-tap-vsock forwarder
+about: ''
+
+git_user: containers
+git_repo: gvisor-tap-vsock
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: gvforwarder
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    is_raw_binary: true
+
+arch_map:
+  amd64: ''
