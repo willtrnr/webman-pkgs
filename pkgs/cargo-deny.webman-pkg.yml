@@ -1,0 +1,39 @@
+tagline: cargo-deny
+about: |
+  Cargo plugin for linting your dependencies.
+
+git_user: EmbarkStudios
+git_repo: cargo-deny
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/[VER]/
+filename_format: cargo-deny-[VER]-[ARCH]-[OS].[EXT]
+version_format: '[VER]'
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: unknown-linux-musl
+    ext: tar.gz
+    extract_has_root: true
+    bin_path: cargo-deny
+  macos:
+    name: apple-darwin
+    ext: tar.gz
+    extract_has_root: true
+    bin_path: cargo-deny
+  win:
+    name: pc-windows-msvc
+    ext: tar.gz
+    extract_has_root: true
+    bin_path: cargo-deny
+
+arch_map:
+  amd64: x86_64
+  arm64: aarch64
+
+ignore:
+  - os: win
+    arch: arm64
