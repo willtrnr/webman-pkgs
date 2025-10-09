@@ -6,5 +6,6 @@ packages:
   - argo
   - egctl
   - kubescape
+  - kubesec
   - linkerd
   - longhornctl
