@@ -9,3 +9,4 @@ packages:
   - kubesec
   - linkerd
   - longhornctl
+  - mesheryctl

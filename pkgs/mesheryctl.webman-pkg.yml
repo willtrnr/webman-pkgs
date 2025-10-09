@@ -1,0 +1,44 @@
+tagline: mesheryctl
+about: |
+  Meshery, the cloud native manager.
+
+git_user: meshery
+git_repo: meshery
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: mesheryctl_[VER]_[OS]_[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: Linux
+    ext: tar.gz
+    bin_path: mesheryctl
+  macos:
+    name: Darwin
+    ext: tar.gz
+    bin_path: mesheryctl
+  win:
+    name: Windows
+    ext: zip
+    bin_path: mesheryctl
+
+arch_map:
+  '386': i386
+  amd64: x86_64
+  arm: arm
+  arm64: arm64
+
+ignore:
+  - os: macos
+    arch: '386'
+  - os: macos
+    arch: arm
+  - os: win
+    arch: arm
+  - os: win
+    arch: arm64
