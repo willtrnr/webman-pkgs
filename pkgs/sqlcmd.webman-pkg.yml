@@ -1,0 +1,44 @@
+tagline: sqlcmd
+about: |
+  The new sqlcmd, CLI for SQL Server and Azure SQL.
+
+git_user: microsoft
+git_repo: go-sqlcmd
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: sqlcmd-[OS]-[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    ext: tar.bz2
+    bin_path: sqlcmd
+  macos:
+    name: darwin
+    ext: tar.bz2
+    bin_path: sqlcmd
+  win:
+    name: windows
+    ext: zip
+    bin_path: sqlcmd
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
+  arm: arm
+  s390x: s390x
+
+ignore:
+  - os: linux
+    arch: arm
+  - os: macos
+    arch: arm
+  - os: macos
+    arch: s390x
+  - os: win
+    arch: s390x
