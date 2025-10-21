@@ -1,0 +1,39 @@
+tagline: kubeseal
+about: |
+  Client-side tool for the Sealed Secrets kubernetes controller.
+
+git_user: bitnami-labs
+git_repo: sealed-secrets
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: kubeseal-[VER]-[OS]-[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    ext: tar.gz
+    bin_path: kubeseal
+  macos:
+    name: darwin
+    ext: tar.gz
+    bin_path: kubeseal
+  win:
+    name: windows
+    ext: tar.gz
+    bin_path: kubeseal
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
+  arm: arm
+
+ignore:
+  - os: win
+    arch: arm
+  - os: win
+    arch: arm64
