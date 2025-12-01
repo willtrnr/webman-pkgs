@@ -3,6 +3,7 @@ tagline: Rust cargo extensions
 description: ''
 
 packages:
+  - cargo-chef
   - cargo-deny
   - cargo-machete
   - cargo-xwin
