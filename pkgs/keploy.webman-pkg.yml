@@ -1,0 +1,33 @@
+tagline: keploy
+about: |
+  API, Integration, E2E Testing Agent for Developers that actually work. Generate tests, mocks/stubs for your APIs!
+
+git_user: keploy
+git_repo: keploy
+info_url: https://github.com/[GIT_USER]/[GIT_REPO]
+releases_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/
+source_url: https://github.com/[GIT_USER]/[GIT_REPO]/
+
+base_download_url: https://github.com/[GIT_USER]/[GIT_REPO]/releases/download/v[VER]/
+filename_format: keploy_[OS]_[ARCH].[EXT]
+version_format: v[VER]
+latest_strategy: github-release
+
+os_map:
+  linux:
+    name: linux
+    ext: tar.gz
+    bin_path: keploy
+  macos:
+    name: darwin
+    ext: tar.gz
+    bin_path: keploy
+    filename_format_override: keploy_[OS]_all
+  win:
+    name: windows
+    ext: tar.gz
+    bin_path: keploy
+
+arch_map:
+  amd64: amd64
+  arm64: arm64
