@@ -15,17 +15,11 @@ latest_strategy: github-release
 
 os_map:
   linux:
-    name: unknown-linux-musl
-    ext: tar.gz
-    bin_path: cargo-chef
-  macos:
-    name: apple-darwin
-    ext: tar.gz
-    bin_path: cargo-chef
-  win:
-    name: pc-windows-msvc
-    ext: zip
+    name: unknown-linux-gnu
+    ext: tar.xz
+    extract_has_root: true
     bin_path: cargo-chef
 
 arch_map:
   amd64: x86_64
+  arm64: aarch64
